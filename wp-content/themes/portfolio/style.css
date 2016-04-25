@@ -257,3 +257,15 @@ display: block;
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+
+/* Begin Sabrina's Custom Styles --------------------------------------- */
+
+/* NAVIGATION ---------------------------------------------------------- */
+
+.navbar li {
+	position: relative;
+	display:inline-block;
+	margin: 20px;
+	font-size: 10px;
+	padding: 5px 10px;
+}

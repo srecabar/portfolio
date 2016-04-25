@@ -12,15 +12,17 @@
 
 get_header(); ?>
 
-	<?php while ( have_posts() ) : the_post(); ?>
+<?php
+	query_posts(array(
+			'post_type' => 'print',
+			'showposts' => 10,
+			'category'  => 'printmaking'
+	) );
+?>
 
-		<?php get_template_part( 'content', 'page' ); ?>
+<?php while (have_posts()) : the_post(); ?>
 
-		<?php
-			// If comments are open or we have at least one comment, load up the comment template
-			if ( comments_open() || '0' != get_comments_number() )
-				comments_template();
-		?>
+<?php get_template_part( 'content', 'work' ); ?>
 
 	<?php endwhile; // end of the loop. ?>
 
