@@ -20,7 +20,7 @@
 			<a href="<?php the_permalink(); ?>">
 				<div class="col-md-4">
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-					<?php break; ?>
+				 <?php /*break; */ ?>
 				</div>
 			</a>
 	<?php endwhile; ?>
