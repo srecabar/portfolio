@@ -8,12 +8,6 @@
 
 <article class="col-md-4" id="post-<?php the_ID(); ?>">
 	<div class="entry-content">
-		<?php if( have_rows('project_image') ): ?>
-			<?php while( have_rows('project_image') ): the_row();
-				// vars
-				$image = get_sub_field('image');
-				$caption = get_sub_field('caption');
-			?>
 			<a class="preview" href="<?php the_permalink(); ?>">
 				<?php
 					$image = get_field('green_image');
@@ -25,8 +19,6 @@
 
 <?php endif; ?>
 			</a>
-	<?php endwhile; ?>
-<?php endif; ?>
 		<!-- <div class="entry-content-thumbnail">
 			<?php the_post_thumbnail(); ?>
 		</div> -->
