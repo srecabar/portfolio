@@ -6,10 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
-	</header><!-- .entry-header -->
-
+<article class="col-md-4" id="post-<?php the_ID(); ?>">
 	<div class="entry-content">
 		<?php if( have_rows('project_image') ): ?>
 			<?php while( have_rows('project_image') ): the_row();
@@ -17,11 +14,16 @@
 				$image = get_sub_field('image');
 				$caption = get_sub_field('caption');
 			?>
-			<a href="<?php the_permalink(); ?>">
-				<div class="col-md-4">
-					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-				 <?php /*break; */ ?>
-				</div>
+			<a class="preview" href="<?php the_permalink(); ?>">
+				<?php
+					$image = get_field('green_image');
+					$image2 = get_field('normal_image');
+
+					if( !empty($image) ): ?>
+
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" onmouseover="this.src='<?php echo $image2['url']; ?>'" onmouseout="this.src='<?php echo $image['url']; ?>'" />
+
+<?php endif; ?>
 			</a>
 	<?php endwhile; ?>
 <?php endif; ?>
