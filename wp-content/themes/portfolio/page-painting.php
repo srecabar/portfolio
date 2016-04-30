@@ -16,7 +16,7 @@ get_header(); ?>
 	query_posts(array(
 			'post_type' => 'visual',
 			'showposts' => 10,
-			'category'  => 'printmaking'
+			'category'  => 'painting'
 	) );
 ?>
 
