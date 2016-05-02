@@ -17,7 +17,7 @@ get_header(); ?>
   <div class="row">
     <div class="col-md-12">
       <div class="home">
-        <img src="http://localhost:8888/portfolio//wp-content/themes/portfolio/img/paint.jpg">
+        <img src="http://localhost:8888/portfolio//wp-content/themes/portfolio/img/colors.jpg">
 
 
 

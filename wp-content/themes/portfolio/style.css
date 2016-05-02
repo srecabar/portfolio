@@ -269,6 +269,7 @@ display: block;
 .navbar li {
 	position: relative;
 	display:inline-block;
+	font-family: 'Roboto', sans-serif;
 	/*margin: 20px;*/
 	/*font-size: 10px;*/
 	/*padding: 5px 10px;*/
@@ -279,33 +280,43 @@ display: block;
 .navbar li a {
 	padding-top: 15px;
 	padding-bottom: 15px;
+	color: #34b458;
 }
 .navbar-header .navbar-brand {
 	padding-top: 15px;
 	padding-bottom: 15px;
+	color: #34b458;
+	font-family: 'Roboto', sans-serif;
 }
 .navbar-header .navbar-brand:focus,
 .navbar-header .navbar-brand:hover {
+	font-size: 19px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	color: green;
+	color: #34b458;
+	font-family: 'Roboto', sans-serif;
 }
 .dropdown-menu li {
+	font-family: 'Roboto', sans-serif;
 	width: 100%;
 }
 .dropdown-menu li a:hover,
 .dropdown-menu li a:focus {
 	color: #ffffff;
 	text-decoration: none;
-	background-color: green;
+	background-color: #34b458;
 	background-image: none;
 }
+
 .dropdown-menu li a:active {
-	background-color: green;
+	background-color: #34b458;
 	background-image: none;
 }
 
-
+.navbar-default {
+  background-image: none;
+	text-decoration: none;
+}
 .navbar .container {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
